@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Hunter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Make the page fill the entire viewport */
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9fb;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-nav {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .logo img {
+            width: 150px; /* Increased logo size */
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        .auth-buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .login {
+            color: #4a3aff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .separator {
+            width: 1px;
+            height: 20px;
+            background-color: #ddd;
+            margin: 0 10px;
+        }
+
+        .sign-up {
+            padding: 10px 20px;
+            background-color: #4a3aff;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .sign-up:hover {
+            background-color: #3a2ecc;
+        }
+
+        .main-content {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 40px;
+            flex-grow: 1; /* Make main content fill remaining space */
+            flex-wrap: wrap;
+        }
+
+        .main-text {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .title-image {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+
+        .subtext {
+            margin-top: 10px;
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .search-container {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            gap: 10px;
+        }
+
+        .search-bar input[type="text"] {
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 1rem;
+            color: #555;
+            flex: 2;
+            background: url('Icon.png') no-repeat left center;
+            padding-left: 35px;
+        }
+
+        .search-bar select {
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 1rem;
+            color: #555;
+            flex: 1;
+            background: url('Icon (1).png') no-repeat left center;
+            padding-left: 35px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #4a3aff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .popular-searches {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #888;
+            text-align: left;
+        }
+
+        .profile-image {
+            max-width: 450px;
+            width: 100%;
+            object-fit: cover;
+            align-self: flex-start;
+            margin-left: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .main-text {
+                margin-right: 0;
+            }
+            .profile-image {
+                max-width: 300px;
+                margin-top: 20px;
+                margin-left: 0;
+            }
+            .search-container {
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-nav">
+            <div class="logo">
+                <img src="Logo.png" alt="JobHunter Logo">
+            </div>
+            <nav class="nav-links">
+                <a href="#">Find Jobs</a>
+                <a href="#">Browse Companies</a>
+            </nav>
+        </div>
+        <div class="auth-buttons">
+            <a href="#" class="login">Login</a>
+            <div class="separator"></div>
+            <a href="#" class="sign-up">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <div class="main-text">
+            <!-- Title Image -->
+            <img src="Title.png" alt="Discover more than 5000+ Jobs" class="title-image">
+            
+            <!-- Subtitle text below the title image -->
+            <p class="subtext">Great platform for the job seeker searching for new career heights and passionate about startups.</p>
+            
+            <!-- Search Bar and Popular Searches directly below subtitle text -->
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Job title or keyword">
+                    <select>
+                        <option>Bangkok, Thailand</option>
+                        <!-- Add more locations as needed -->
+                    </select>
+                    <button>Search my job</button>
+                </div>
+                <p class="popular-searches">Popular: UI Designer, UX Researcher, Android, Admin</p>
+            </div>
+        </div>
+        
+        <!-- Larger Profile Image on the right side -->
+        <img src="image 1.png" alt="Profile Image" class="profile-image">
+    </div>
+</body>
+</html>
