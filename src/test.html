@@ -7,7 +7,13 @@
     <title>Job Hunter - Login</title>
 
 <body>
-    <h1 class="header-text"><a href="Entrepreneur.html">Are you an entrepreneur?</a></h1>
+    <div class="logo-nav">
+        <div class="logo">
+            <a href="../src/firstpage.html">
+                <img src="../graphics/Logo.png" alt="Job Hunter Logo">
+            </a>
+        </div>
+    </div>
 
     <div class="login-container">
         <!-- Logo -->
@@ -16,7 +22,7 @@
         </a>
 
         <!-- Heading -->
-        <h2>Log in to manage your JobHunter profile, save your searches and view recommended jobs.</h2>
+        <h2>Nice to see you again</h2>
 
         <!-- Form Fields -->
         <div class="form-group">
@@ -103,20 +109,7 @@
         height: 100vh;
         background-color: #f9f9fb;
     }
-    .header-text {
-        position: absolute;
-        top: 85px;
-        right: 520px;
-        font-size: 12px;
-        color: #333;
-    }
-    .header-text a {
-        text-decoration: underline;
-        color: #555;
-    }
-    .header-text:hover {
-        color: #4a3aff;
-    }
+
     .login-container {
         width: 100%;
         max-width: 400px;
@@ -128,7 +121,7 @@
         text-align: center;
         margin-bottom: 20px;
     }
-   
+
     /* Larger logo */
     .login-container img.logo {
         width: 160px;
@@ -136,7 +129,7 @@
     }
 
     .login-container h2 {
-        font-size: 16px;
+        font-size: 1.5rem;
         color: #333;
         margin-bottom: 10px;
     }
@@ -249,7 +242,29 @@
         color: #4a3aff;
         text-decoration: none;
         font-weight: bold;
-        
+    }
+
+    .logo-nav {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .logo img {
+        width: 150px;
+        /* Increased logo size */
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 60px;
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #555;
     }
 </style>
 </head>

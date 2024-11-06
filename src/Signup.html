@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Hunter - Login</title>
+
+<body>
+    <div class="login-container">
+        <!-- Logo -->
+        <a href="../src/firstpage.html">
+            <img src="../graphics/Logo.png" alt="Job Hunter Logo" class="logo">
+        </a>
+
+        <!-- Heading -->
+        <h2>Create an account</h2>
+
+        <!-- Form Fields -->
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+        </div>
+
+        <div class="form-group password-container">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            <span class="show-password" onclick="togglePassword('password')">
+                <svg id="eyeOpen_password" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="#555">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 4.5C7.05 4.5 3.16 7.61 1 12c2.16 4.39 6.05 7.5 11 7.5s8.84-3.11 11-7.5c-2.16-4.39-6.05-7.5-11-7.5zm0 13c-3.04 0-5.5-2.46-5.5-5.5S8.96 6.5 12 6.5 17.5 8.96 17.5 12 15.04 17.5 12 17.5zm0-9c-1.93 0-3.5 1.57-3.5 3.5S10.07 15.5 12 15.5s3.5-1.57 3.5-3.5S13.93 8.5 12 8.5z" />
+                </svg>
+                <svg id="eyeClosed_password" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="#555" style="display: none;">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 4.5C7.05 4.5 3.16 7.61 1 12c2.16 4.39 6.05 7.5 11 7.5s8.84-3.11 11-7.5c-2.16-4.39-6.05-7.5-11-7.5zm0 13c-1.61 0-3.17-.31-4.62-.89L5.09 16.5A9.941 9.941 0 0 0 12 19c4.52 0 9.28-3.09 11-8-1.08-2.07-2.63-3.87-4.51-5.12l-1.46 1.46C17.17 8.92 17.5 10.43 17.5 12c0 3.04-2.46 5.5-5.5 5.5z" />
+                </svg>
+            </span>
+        </div>
+        
+        <div class="form-group password-container">
+            <label for="confirm_password">Confirm password</label>
+            <input type="password" id="confirm_password" placeholder="Confirm password">
+            <span class="show-password" onclick="togglePassword('confirm_password')">
+                <svg id="eyeOpen_confirm_password" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="#555">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 4.5C7.05 4.5 3.16 7.61 1 12c2.16 4.39 6.05 7.5 11 7.5s8.84-3.11 11-7.5c-2.16-4.39-6.05-7.5-11-7.5zm0 13c-3.04 0-5.5-2.46-5.5-5.5S8.96 6.5 12 6.5 17.5 8.96 17.5 12 15.04 17.5 12 17.5zm0-9c-1.93 0-3.5 1.57-3.5 3.5S10.07 15.5 12 15.5s3.5-1.57 3.5-3.5S13.93 8.5 12 8.5z" />
+                </svg>
+                <svg id="eyeClosed_confirm_password" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="#555" style="display: none;">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 4.5C7.05 4.5 3.16 7.61 1 12c2.16 4.39 6.05 7.5 11 7.5s8.84-3.11 11-7.5c-2.16-4.39-6.05-7.5-11-7.5zm0 13c-1.61 0-3.17-.31-4.62-.89L5.09 16.5A9.941 9.941 0 0 0 12 19c4.52 0 9.28-3.09 11-8-1.08-2.07-2.63-3.87-4.51-5.12l-1.46 1.46C17.17 8.92 17.5 10.43 17.5 12c0 3.04-2.46 5.5-5.5 5.5z" />
+                </svg>
+            </span>
+        </div>
+        
+        <script>
+            function togglePassword(field) {
+                const passwordInput = document.getElementById(field);
+                const eyeOpenIcon = document.getElementById(`eyeOpen_${field}`);
+                const eyeClosedIcon = document.getElementById(`eyeClosed_${field}`);
+        
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                    eyeOpenIcon.style.display = "none";
+                    eyeClosedIcon.style.display = "inline";
+                } else {
+                    passwordInput.type = "password";
+                    eyeOpenIcon.style.display = "inline";
+                    eyeClosedIcon.style.display = "none";
+                }
+            }
+        </script>
+        
+        <!-- Login Button -->
+        <button class="login-button">Sign Up</button>
+
+        <!-- Google Sign-in Button -->
+        <div class="google-signin">
+            <img src="../graphics/Google.png" alt="Google Icon">
+            Sign in with Google
+        </div>
+
+        <!-- Sign Up Link -->
+        <p class="signup-link">Already have an account? 
+            <a href="../src/Login.html">Login</a>
+        </p>
+    </div>
+
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f9f9fb;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 400px;
+        background-color: white;
+        padding: 40px;
+        padding-bottom: 5px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Larger logo */
+    .login-container img.logo {
+        width: 160px;
+        margin-bottom: 20px;
+    }
+
+    .login-container h2 {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .login-container p {
+        color: #888;
+        margin-bottom: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+        font-size: 0.9rem;
+    }
+
+    .password-container {
+        position: relative;
+    }
+
+    .password-container input {
+        width: 100%;
+        padding-right: 40px;
+        /* Space for the eye icon */
+    }
+
+    .password-container .show-password {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(0%);
+        cursor: pointer;
+        font-size: 1.2rem;
+        color: #555;
+    }
+
+    .login-button {
+        width: 100%;
+        padding: 12px;
+        background-color: #4a3aff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .google-signin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: white;
+        font-size: 0.9rem;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+
+    .google-signin img {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .signup-link {
+        font-size: 0.9rem;
+        margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+        text-align: center; /* จัดกึ่งกลาง */
+    }
+
+    .signup-link a {
+        color: #4a3aff;
+        text-decoration: none;
+        font-weight: bold;
+        
+    }
+</style>
+</head>
+
+</html>
