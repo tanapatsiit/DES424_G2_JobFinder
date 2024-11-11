@@ -5,21 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Hunter</title>
-</head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/tooplate-moso-interior.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;700&display=swap" rel="stylesheet">
 
 <body>
     <!-- Header Section -->
     <header>
         <div class="logo-nav">
             <div class="logo">
-                <a href="../src/Firstpage.html">
+                <a href="../src/firstpage.html">
                     <img src="../graphics/Logo.png" alt="Job Hunter Logo">
                 </a>
             </div>
             <nav class="nav-links">
                 <a href="Findjob.html">Find Jobs</a>
-                <a href="Browse.html">Browse Companies</a>
-                <a href="Interest.html">Interesting companies</a>
+                <a href="#">Browse Companies</a>
+                <a href="#">Interesting companies</a>
             </nav>
         </div>
         <div class="auth-buttons">
@@ -142,15 +148,18 @@
                         </optgroup>
 
                     </select>
-                <button>Search my job</button>
-            </div>
-                <p class="popular-searches">Popular: UI Designer, UX Researcher, Android, Admin</p>
-            </div> 
-        </div>
-            <img src="../graphics/image 1.png" alt="Profile Image" class="profile-image">
+                    <button>Search my job</button>
+                </div>
+                    <p class="popular-searches">Popular: UI Designer, UX Researcher, Android, Admin</p>
+                </div> 
+                <div class="hero-btn d-flex justify-content-center align-items-center">
+                    <a class="bi-arrow-down hero-btn-link smoothscroll" href="#section_2"></a>
+                </div> 
         </div>
 
-        
+        <!-- Larger Profile Image on the right side -->
+        <img src="../graphics/image 1.png" alt="Profile Image" class="profile-image">
+    </div>
 </body>
 
 </html>
@@ -295,7 +304,7 @@
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         width: 100%;
-        gap: 10px;
+        gap: 15px;
     }
 
     .search-bar input[type="text"] {
@@ -369,3 +378,5 @@
         }
     }
 </style>
+
+</head>
