@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="Firstpage.css">
     <title>Job Hunter</title>
 </head>
 
@@ -19,7 +22,7 @@
             <nav class="nav-links">
                 <a href="Findjob.html">Find Jobs</a>
                 <a href="Browse.html">Browse Companies</a>
-                <a href="Interest.html">Interesting companies</a>
+                <a href="Exploercompanies.html">Exploer companies</a>
             </nav>
         </div>
         <div class="auth-buttons">
@@ -149,223 +152,132 @@
         </div>
             <img src="../graphics/image 1.png" alt="Profile Image" class="profile-image">
         </div>
+        
+        <section class="section__container feature__container" id="feature">
+            <p class="section__subheader">Explore by</p>
+            <h2 class="section__header">Category</h2>
+            <div class="feature__grid">
+                <div class="feature__card">
+                    <span><i class="ri-hotel-line"></i></span>
+                    <h4>Hotel Detail</h4>
+                    <p>
+                    Featuring vibrant decor, the high-end rooms have free Wi-Fi, flat-screens and minifridges, plus rainfall showers. Upgraded rooms add sitting areas, and some offer balconies with city or garden views. A suite includes a modern canopy bed. Room service is available.
+                    </p>
+                </div>
+                <div class="feature__card">
+                    <span><i class="ri-time-line"></i></span>
+                    <h4>Quite Hours</h4>
+                    <p>
+                    We understand that peace and uninterrupted rest are essential for a
+                    rejuvenating experience.
+                    </p>
+                </div>
+                <div class="feature__card">
+                    <span><i class="ri-map-pin-line"></i></span>
+                    <h4>Best Location</h4>
+                    <p>
+                    At our hotel booking website, we take pride in offering
+                    accommodations in the most prime and sought-after locations.
+                    </p>
+                </div>
+                <div class="feature__card">
+                    <span><i class="ri-close-circle-line"></i></span>
+                    <h4>Free Cancellation</h4>
+                    <p>
+                    We understand that travel plans can change unexpectedly, which is
+                    why we offer the flexibility of free cancellation.
+                    </p>
+                </div>
+                <div class="feature__card">
+                    <span><i class="ri-wallet-line"></i></span>
+                    <h4>Payment Options</h4>
+                    <p>
+                    Our hotel booking website offers a range of convenient payment
+                    options to suit your preferences.
+                    </p>
+                </div>
+                <div class="feature__card">
+                    <span><i class="ri-coupon-line"></i></span>
+                    <h4>Special Offers</h4>
+                    <p>
+                    Whether you're planning a romantic getaway, or a business trip, our
+                    carefully curated special offers cater to all your needs.
+                    </p>
+                </div>
+                <div class="more">
+                    <a href="../src/Findjob.html">
+                        More <img src="../graphics/right-arrow.png" alt="Right arrow" class="arrow-icon">
+                    </a>
+                </div>
+            </div>
+        </section>
 
+        <footer class="footer">
+            <div class="section__container footer__container">
+                <div class="footer__col">
+                    <div class="logo footer__logo">
+                    <div href="Firstpage.html">J</div>
+                    <span href="Firstpage.html">ob<br/>Hunter</span>
+                    </div>
+                    <p class="section__description">
+                        Website concept focused on streamlining job searches
+                        <br> for job seekers and providing a platform for companies to reach potential employees effectively.
+                    </p>
+                    <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="ri-youtube-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-linkedin-fill"></i></a>
+                    </li>
+                    </ul>
+                </div>
+        
+                <div class="footer__col">
+                    <h4>Services</h4>
+                    <div class="footer__links">
+                    <li><a href="Firstpage.html">Job seekers</a></li>
+                    <li><a href="Findjob.html">Job search</a></li>
+                    <li><a href="Browse.html">Recommended jobs</a></li>
+                    <li><a href="Exploercompanies.html">Exploer companies</a></li>
+                    <li><a href="abtus.html">About us</a></li>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4>Contact Us</h4>
+                    <div class="footer__links">
+                    <li>
+                        <span><i class="ri-phone-fill"></i></span>
+                        <div>
+                        <h5>Phone Number</h5>
+                        <p>+66 923456781</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span><i class="ri-record-mail-line"></i></span>
+                        <div>
+                        <h5>Email</h5>
+                        <p>des424@cloudbased.com</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span><i class="ri-map-pin-2-fill"></i></span>
+                        <div>
+                        <h5>Location</h5>
+                        <p>DES424 - Cloud-based Application Development</p>
+                        </div>
+                    </li>
+                    </div>
+                </div>
+            </div>
+        </footer>
         
 </body>
 
 </html>
-
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-    }
-
-    /* Make the page fill the entire viewport */
-    html,
-    body {
-        height: 100%;
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #f9f9fb;
-    }
-
-    header {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 40px;
-        background-color: white;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .logo-nav {
-        display: flex;
-        align-items: center;
-        gap: 50px;
-    }
-
-    .logo img {
-        width: 150px;
-        /* Increased logo size */
-    }
-
-    .nav-links {
-        display: flex;
-        gap: 60px;
-        font-size: 1rem;
-        color: #555;
-    }
-
-    .nav-links a {
-        text-decoration: none;
-        color: #555;
-
-    }.nav-links a:hover {
-        text-decoration: none;
-        color: #4a3aff ;
-    }
-
-    .auth-buttons {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .login {
-        color: #4a3aff;
-        font-weight: bold;
-        text-decoration: none;
-    }
-
-    .separator {
-        width: 1px;
-        height: 20px;
-        background-color: #ddd;
-        margin: 0 10px;
-    }
-
-    .sign-up {
-        padding: 10px 20px;
-        background-color: #4a3aff;
-        color: white;
-        border-radius: 5px;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    .sign-up:hover {
-        background-color: #3a2ecc;
-    }
-
-    .main-content {
-        width: 100%;
-        max-width: 1300px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 50px 40px;
-        flex-grow: 1;
-        /* Make main content fill remaining space */
-        flex-wrap: wrap;
-    }
-
-    .main-text {
-        max-width: 600px;
-        width: 100%;
-    }
-
-    .title-image {
-        width: 100%;
-        max-width: 800px;
-        margin-bottom: 20px;
-        margin-left: -20px;
-    }
-
-    .subtext {
-        margin-top: 10px;
-        color: #666;
-        font-size: 1rem;
-        margin-left: -20px;
-        line-height: 1.8;
-    }
-
-    .search-container {
-        margin-top: 20px;
-        width: 100%;
-        max-width: 600px;
-        margin-left: -20px;
-    }
-
-    .search-bar {
-        display: flex;
-        align-items: center;
-        background-color: white;
-        padding: 10px;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        gap: 10px;
-    }
-
-    .search-bar input[type="text"] {
-        border: none;
-        outline: none;
-        padding: 10px;
-        font-size: 1rem;
-        color: #555;
-        flex: 2;
-        background: url('../graphics/Icon.png') no-repeat left center;
-        padding-left: 35px;
-    }
-
-    .search-bar select {
-        border: none;
-        outline: none;
-        padding: 10px;
-        font-size: 1rem;
-        color: #555;
-        flex: 1;
-        background: url('../graphics/Icon (1).png') no-repeat left center;
-        padding-left: 35px;
-    }
-
-    .search-bar button {
-        padding: 10px 20px;
-        background-color: #4a3aff;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: bold;
-        flex-grow: 0;
-    }
-
-    .popular-searches {
-        margin-top: 10px;
-        font-size: 0.9rem;
-        color: #888;
-        text-align: left;
-    }
-
-    .profile-image {
-        max-width: 400px;
-        width: 100%;
-        object-fit: cover;
-        align-self: center;
-        margin-left: 70px;
-    }
-
-    @media (max-width: 768px) {
-        .main-content {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .main-text {
-            margin-right: 0;
-        }
-
-        .profile-image {
-            max-width: 300px;
-            margin-top: 20px;
-            margin-left: 0;
-        }
-
-        .search-container {
-            margin-top: 20px;
-            width: 100%;
-        }
-    }
-</style>
