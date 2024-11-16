@@ -33,7 +33,7 @@ body {
 .section__container {
     max-width: var(--max-width);
     margin: auto;
-    padding: 5rem 1rem;
+    padding: 4rem 1rem;
 }
 .section__subheader{
     margin-bottom: 0.5rem;
@@ -56,6 +56,66 @@ body {
     display: grid;
     gap: 2rem;
 }
+.feature__card {
+    position: relative;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.feature__card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center; /* Aligns text to the left */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures space between text and arrow */
+    gap: 0.5rem;
+}
+
+.feature__card-content {
+    flex-grow: 1;
+}
+
+.feature__card .arrow-link {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Aligns arrow to the right */
+    font-size: 1.25rem;
+    color: #0f172a;
+    transition: color 0.3s ease;
+}
+.feature__card:hover .arrow-link {
+    color: #f6ac0f !important; /* Change arrow color on hover */
+}
+.feature__card:hover .arrow-link img {
+    filter: invert(42%) sepia(91%) saturate(529%) hue-rotate(1deg) brightness(100%) contrast(105%);
+    /* Adjusts color of the image (useful for icons) */
+}
+
+.arrow-link img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+.feature__card:hover {
+    transform: scale(1.05);
+}
+
 .feature__card span {
     display: inline-block;
     margin-bottom: 0.5rem;
@@ -72,6 +132,7 @@ body {
 .feature__card p {
     color: var(--text-light);
 }
+
 .footer {
     background-color: white;
 }
@@ -87,16 +148,17 @@ body {
     background-color: var(--secondary-color);
 }
 .logo {
-display: flex;
-align-items: center;
-gap: 10px;
-font-weight: bolder;
-color: var(--text-light);
-letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bolder;
+    color: var(--text-light);
+    letter-spacing: 2px;
+    font-size: 25px;
 }
 .logo div {
-    padding-inline: 12px;
-    font-size: 2rem;
+    padding-inline: 19px;
+    font-size: 3rem;
 }
 a {
     text-decoration: none;
@@ -182,7 +244,7 @@ a {
 }
 @media (width > 768px) {
     .feature__grid{ 
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     }
 
     .footer__container{
@@ -392,29 +454,39 @@ header {
 }
 
 .more {
-    text-align: center;
-    margin: 20px auto;
-    border: 2px solid #333; /* สีของกรอบ */
-    padding: 10px 20px;
-    display: inline-block;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
 }
 
 .more a {
+    font-size: 1.2rem;
+    color: #0f172a;
     text-decoration: none;
-    color: #333;
-    font-size: 16px;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px; /* Space between text and arrow */
+    padding: 10px 20px; /* เพิ่ม padding เพื่อขยายขนาดปุ่ม */
+    border: 2px solid #0f172a; /* กำหนดเส้นกรอบ */
+    border-radius: 10px; /* ทำให้มุมโค้งมน */
+    transition: background-color 0.3s, color 0.3s; /* เพิ่มเอฟเฟกต์การเปลี่ยนสี */
 }
-
-.more:hover {
-    background-color: #f6ac0f; /* เปลี่ยนสีเมื่อ hover */
+.more a:hover {
+    background-color: #0f172a; /* สีพื้นหลังเมื่อชี้ */
+    color: #ffffff; /* สีตัวอักษรเมื่อชี้ */
+    transition: filter 0.3s;
 }
-
-.arrow-icon {
-    width: 12px; /* กำหนดขนาดของไอคอนลูกศร */
+.more a .arrow-icon {
+    width: 20px;
     height: auto;
+}
+.more a:hover .arrow-icon {
+    filter: brightness(0) invert(1); /* เปลี่ยนสีของลูกศรเมื่อชี้ */
+}
+hr {
+    margin-top: -70px;  /* ปรับค่าระยะห่างด้านบน */
+    margin-bottom: 50px;
+    height: 2px;  
+    background-color: #000;
 }

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Findjob.css">
+    <title> All Jobs</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-nav">
+            <div class="logo">
+                <a href="../src/Firstpage.html">
+                    <img src="../graphics/Logo.png" alt="Job Hunter Logo">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="Findjob.html">Find Jobs</a>
+                <a href="Browse.html">Browse Companies</a>
+                <a href="Exploercompanies.html">Exploer companies</a>
+            </nav>
+        </div>
+        <div class="auth-buttons">
+            <a href="../src/Login.html" class="login">Login</a>
+            <div class="separator"></div>
+            <a href="../src/Signup.html" class="sign-up">Sign Up</a>
+        </div>
+    </header>
+
+    <!--Jobs filter selection-->
+    <section class="job-filter">
+        <h1 class="heading">All Jobs</h1>
+        <form action="" method="post">
+            <div class="flex">
+                <div class="box">
+                    <p>job title<span> *</span></p>
+                    <input type="text" name="title" placeholder="Job title or keyword" 
+                    required maxlength="30" class="input">
+                </div>
+                <div class="box">
+                    <p>job location</p>
+                    <input type="text" name="location" placeholder="Enter suburb, city or region" 
+                    required maxlength="50" class="input">
+                </div>
+            </div>
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="All work types" name="date" 
+                    maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="items">Full time</p>
+                        <p class="items">Part time</p>
+                        <p class="items">Contract/Temp</p>
+                        <p class="items">Casual/Vacation</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="listed any time" name="date" 
+                    maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="items">Any Time</p>
+                        <p class="items">Today</p>
+                        <p class="items">Last 3 days</p>
+                        <p class="items">Last 7 days</p>
+                        <p class="items">Last 14 days</p>
+                        <p class="items">Last 30 days</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="paying ฿0" name="date" 
+                    maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="items">0฿</p>
+                        <p class="items">15K</p>
+                        <p class="items">20K</p>
+                        <p class="items">25K</p>
+                        <p class="items">30K</p>
+                        <p class="items">40K</p>
+                        <p class="items">50K</p>
+                        <p class="items">60K</p>
+                        <p class="items">70K</p>
+                        <p class="items">80K</p>
+                        <p class="items">90K</p>
+                        <p class="items">100K</p>
+                        <p class="items">150K</p>
+                        <p class="items">200K</p>
+                    </div>
+                </div>
+            </div>
+            <!-- SEEK Button -->
+            <button type="submit" class="seek-button">SEEK</button>
+        </form>
+    </section>
+        
+    <!-- all jobs section starts-->   
+    <section class="section__container feature__container" id="feature">
+        <hr style="margin-top:-10px;">
+        <!--<h2 class="section__header">Category</h2>-->
+        <div class="feature__grid">
+            <div class="feature__card">
+                <span><img src="../category/design.png"  style="width: 40px; height: auto;" /></span>
+                <h4>Design</h4>
+                <p>Create and develop concepts.</p>
+                <a href="Findjob.html" class="arrow-link">
+                    <img src="../graphics/right-arrow.png" alt="Right Arrow" style="width: 30px; height: auto;" />
+                </a>
+            </div>
+            
+            <div class="feature__card">
+                <span><img src="../category/sales.png" style="width: 40px; height: auto;" /></span>
+                <h4>Sales</h4>   
+                <p>Sell products and close deals.</p>
+                <a href="Findjob.html" class="arrow-link">
+                    <img src="../graphics/right-arrow.png" alt="Right Arrow" style="width: 30px; height: auto;" />
+                </a>
+            </div>
+
+            <div class="feature__card">
+                <span><img src="../category/markrting.png" style="width: 40px; height: auto;" /></span>
+                <h4>Marketing</h4>
+                <p>Promote products and analyze data.</p>
+                <a href="Findjob.html" class="arrow-link">
+                    <img src="../graphics/right-arrow.png" alt="Right Arrow" style="width: 30px; height: auto;" />
+                </a>
+            </div>
+
+            <div class="feature__card">
+                <span><img src="../category/human.png" style="width: 40px; height: auto;" /></span>
+                <h4>Human Resource</h4>
+                <p>Manage employee relations and recruitment.</p>
+                <a href="Findjob.html" class="arrow-link">
+                    <img src="../graphics/right-arrow.png" alt="Right Arrow" style="width: 30px; height: auto;" />
+                </a>
+            </div>
+
+            <div class="feature__card">
+                <span><img src="../category/it.png" style="width: 40px; height: auto;" /></span>
+                <h4>Technology</h4>
+                <p>Develop and maintain tech systems and solutions.</p>
+                <a href="Findjob.html" class="arrow-link">
+                    <img src="../graphics/right-arrow.png" alt="Right Arrow" style="width: 30px; height: auto;" />
+                </a>
+            </div>
+
+            <div class="feature__card">
+                <span><img src="../category/engineer.png" style="width: 40px; height: auto;" /></span>
+                <h4>Engineering</h4>
+                <p>Design and solve technical problems.</p>
+                <a href="Findjob.html" class="arrow-link">
+                    <img src="../graphics/right-arrow.png" alt="Right Arrow" style="width: 30px; height: auto;" />
+                </a>
+            </div>
+
+            <div class="feature__card">
+                <span><img src="../category/business.png" style="width: 40px; height: auto;" /></span>
+                <h4>Business</h4>
+                <p>Manage and grow organizations.</p>
+                <a href="Findjob.html" class="arrow-link">
+                    <img src="../graphics/right-arrow.png" alt="Right Arrow" style="width: 30px; height: auto;" />
+                </a>
+            </div>
+
+            <div class="feature__card">
+                <span><img src="../category/finance.png" style="width: 40px; height: auto;" /></span>
+                <h4>Finance</h4>
+                <p>Manage finances and budgets.</p>
+                <a href="Findjob.html" class="arrow-link">
+                    <img src="../graphics/right-arrow.png" alt="Right Arrow" style="width: 30px; height: auto;" />
+                </a>
+            </div>
+        </div>
+        <div class="more">
+            <a href="../src/Findjob.html">
+                Show all jobs <img src="../graphics/right-arrow.png" alt="Right arrow" class="arrow-icon">
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="logo footer__logo">
+                <div href="Firstpage.html">J</div>
+                <span href="Firstpage.html">ob<br/>Hunter</span>
+                </div>
+                <p class="section__description">
+                    Website concept focused on streamlining job searches
+                    <br> for job seekers and providing a platform for companies to reach potential employees effectively.
+                </p>
+                <ul class="footer__socials">
+                <li>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                </li>
+                </ul>
+            </div>
+    
+            <div class="footer__col">
+                <h4>Services</h4>
+                <div class="footer__links">
+                <li><a href="Firstpage.html">Job seekers</a></li>
+                <li><a href="Findjob.html">Job search</a></li>
+                <li><a href="Browse.html">Recommended jobs</a></li>
+                <li><a href="Exploercompanies.html">Exploer companies</a></li>
+                <li><a href="abtus.html">About us</a></li>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <div class="footer__links">
+                <li>
+                    <span><i class="ri-phone-fill"></i></span>
+                    <div>
+                    <h5>Phone Number</h5>
+                    <p>+66 923456781</p>
+                    </div>
+                </li>
+                <li>
+                    <span><i class="ri-record-mail-line"></i></span>
+                    <div>
+                    <h5>Email</h5>
+                    <p>des424@cloudbased.com</p>
+                    </div>
+                </li>
+                <li>
+                    <span><i class="ri-map-pin-2-fill"></i></span>
+                    <div>
+                    <h5>Location</h5>
+                    <p>DES424 - Cloud-based Application Development</p>
+                    </div>
+                </li>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
