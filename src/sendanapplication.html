@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Firstpage.css"> <!-- Your existing CSS -->
+    <title>Job Hunter - Send Application</title>
+    <style>
+        .job-container {
+            max-width: 1500px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-container h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .job-container .form-group {
+            margin-bottom: 15px;
+        }
+
+        .job-container .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .job-container .form-group input,
+        .job-container .form-group textarea,
+        .job-container .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9fb;
+            font-size: 0.9rem;
+        }
+
+        .job-container .form-group input[type="file"] {
+            border: none;
+            background-color: #ffffff;
+        }
+
+        .job-container .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .job-container button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4a3aff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .job-container button:hover {
+            background-color: #3a2ecc;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-nav">
+            <div class="logo">
+                <a href="../src/Firstpage.html">
+                    <img src="../graphics/Logo.png" alt="Job Hunter Logo">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="#feature">Find Jobs</a>
+                <a href="Browse.html">Browse Companies</a>
+                <a href="Exploercompanies.html">Explore Companies</a>
+            </nav>
+        </div>
+        <div class="auth-buttons">
+            <a href="../src/Login.html" class="login">Login</a>
+            <div class="separator"></div>
+            <a href="../src/Signup.html" class="sign-up">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="job-container">
+        <h2>Send an Application</h2>
+
+        <!-- Title of the Job -->
+        <div class="form-group">
+            <label for="jobTitle">Title of the Job</label>
+            <input type="text" id="jobTitle" placeholder="Enter the job title">
+        </div>
+
+        <!-- Description of the Job -->
+        <div class="form-group">
+            <label for="jobDescription">Description of the Job</label>
+            <textarea id="jobDescription" placeholder="Enter the job description"></textarea>
+        </div>
+
+        <!-- Upload Application File -->
+        <div class="form-group">
+            <label for="applicationFile">Upload Application File</label>
+            <input type="file" id="applicationFile" accept=".pdf, .doc, .docx">
+        </div>
+
+        <!-- Upload Cover Letter File -->
+        <div class="form-group">
+            <label for="coverLetterFile">Upload Cover Letter File</label>
+            <input type="file" id="coverLetterFile" accept=".pdf, .doc, .docx">
+        </div>
+
+       
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="logo footer__logo">
+                    <div href="Firstpage.html">J</div>
+                    <span href="Firstpage.html">ob<br />Hunter</span>
+                </div>
+                <p class="section__description">
+                    Website concept focused on streamlining job searches
+                    <br> for job seekers and providing a platform for companies to reach potential employees effectively.
+                </p>
+                <ul class="footer__socials">
+                    <li><a href="#"><i class="ri-youtube-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                    <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4>Services</h4>
+                <ul class="footer__links">
+                    <li><a href="Firstpage.html">Job seekers</a></li>
+                    <li><a href="Findjob.html">Job search</a></li>
+                    <li><a href="Browse.html">Recommended jobs</a></li>
+                    <li><a href="Explorecompanies.html">Explore companies</a></li>
+                    <li><a href="abtus.html">About us</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <ul class="footer__links">
+                    <li>Email: des424@cloudbased.com</li>
+                    <li>Phone: +66 923456781</li>
+                    <li>Location: DES424 - Cloud-based Application Development</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

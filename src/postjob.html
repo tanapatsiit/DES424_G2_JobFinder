@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Firstpage.css"> <!-- Your existing CSS -->
+    <title>Job Hunter - Job Details</title>
+    <style>
+        .job-container {
+            max-width: 1500px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-container h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .job-container .form-group {
+            margin-bottom: 15px;
+        }
+
+        .job-container .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .job-container .form-group input,
+        .job-container .form-group textarea,
+        .job-container .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9fb;
+            font-size: 0.9rem;
+        }
+
+        .job-container .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .job-container button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4a3aff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .job-container button:hover {
+            background-color: #3a2ecc;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-nav">
+            <div class="logo">
+                <a href="../src/Entrepreneur.html">
+                    <img src="../graphics/Logo.png" alt="Job Hunter Logo">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="postjob.html">Post Job</a>
+                <a href="listapplication.html">See the resume list</a>
+            </nav>
+        </div>
+        <div class="auth-buttons">
+            <a href="../src/Entrepreneur_login.html" class="login">Login</a>
+            <div class="separator"></div>
+            <a href="../src/Entrepeneur_Signup.html" class="sign-up">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="job-container">
+        <h2>Company Job Details</h2>
+
+        <!-- Title of the Job -->
+        <div class="form-group">
+            <label for="jobTitle">Title of the Job</label>
+            <input type="text" id="jobTitle" placeholder="Enter the job title">
+        </div>
+
+        <!-- Description of the Job -->
+        <div class="form-group">
+            <label for="jobDescription">Description of the Job</label>
+            <textarea id="jobDescription" placeholder="Enter the job description"></textarea>
+        </div>
+
+        <!-- Job Type -->
+        <div class="form-group">
+            <label for="jobType">Job Type</label>
+            <select id="jobType">
+                <option value="" disabled selected>Select job type</option>
+                <option value="full-time">Full-Time</option>
+                <option value="part-time">Part-Time</option>
+                <option value="freelance">Freelance</option>
+                <option value="contract">Contract</option>
+                <option value="internship">Internship</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="location">Location</label>
+            <select id = 'location'>
+                <optgroup label="กรุงเทพและปริมณฑล">
+                    <option>กรุงเทพมหานคร</option>
+                    <option>นครปฐม</option>
+                    <option>นนทบุรี</option>
+                    <option>ปทุมธานี</option>
+                    <option>สมุทรปราการ</option>
+                    <option>สมุทรสาคร</option>
+                </optgroup>
+
+                <optgroup label="ภาคกลาง">
+                    <option>ชัยนาท</option>
+                    <option>นครนายก</option>
+                    <option>นครสวรรค์</option>
+                    <option>พระนครศรีอยุธยา</option>
+                    <option>ลพบุรี</option>
+                    <option>สระบุรี</option>
+                    <option>สิงห์บุรี</option>
+                    <option>สุพรรณบุรี</option>
+                    <option>อ่างทอง</option>
+                    <option>กาญจนบุรี</option>
+                    <option>ราชบุรี</option>
+                </optgroup>
+
+                <optgroup label="ภาคเหนือ">
+                    <option>เชียงใหม่</option>
+                    <option>เชียงราย</option>
+                    <option>ลำปาง</option>
+                    <option>ลำพูน</option>
+                    <option>แม่ฮ่องสอน</option>
+                    <option>น่าน</option>
+                    <option>พะเยา</option>
+                    <option>แพร่</option>
+                    <option>อุตรดิตถ์</option>
+                    <option>ตาก</option>
+                    <option>พิษณุโลก</option>
+                    <option>สุโขทัย</option>
+                    <option>เพชรบูรณ์</option>
+                </optgroup>
+
+                <optgroup label="ภาคอีสาน">
+                    <option>กาฬสินธุ์</option>
+                    <option>ขอนแก่น</option>
+                    <option>ชัยภูมิ</option>
+                    <option>นครพนม</option>
+                    <option>นครราชสีมา</option>
+                    <option>บึงกาฬ</option>
+                    <option>บุรีรัมย์</option>
+                    <option>มหาสารคาม</option>
+                    <option>มุกดาหาร</option>
+                    <option>ยโสธร</option>
+                    <option>ร้อยเอ็ด</option>
+                    <option>เลย</option>
+                    <option>ศรีสะเกษ</option>
+                    <option>สกลนคร</option>
+                    <option>สุรินทร์</option>
+                    <option>หนองคาย</option>
+                    <option>หนองบัวลำภู</option>
+                    <option>อุดรธานี</option>
+                    <option>อุบลราชธานี</option>
+                    <option>อำนาจเจริญ</option>
+                </optgroup>
+
+                <optgroup label="ภาคใต้">
+                    <option>กระบี่</option>
+                    <option>ชุมพร</option>
+                    <option>ตรัง</option>
+                    <option>นครศรีธรรมราช</option>
+                    <option>นราธิวาส</option>
+                    <option>ปัตตานี</option>
+                    <option>พังงา</option>
+                    <option>พัทลุง</option>
+                    <option>ภูเก็ต</option>
+                    <option>ระนอง</option>
+                    <option>สงขลา</option>
+                    <option>สตูล</option>
+                    <option>สุราษฎร์ธานี</option>
+                    <option>ยะลา</option>
+                </optgroup>
+
+                <optgroup label="ภาคตะวันออก">
+                    <option>จันทบุรี</option>
+                    <option>ฉะเชิงเทรา</option>
+                    <option>ชลบุรี</option>
+                    <option>ตราด</option>
+                    <option>ปราจีนบุรี</option>
+                    <option>ระยอง</option>
+                    <option>สระแก้ว</option>
+                </optgroup>
+
+                <optgroup label="ภาคตะวันตก">
+                    <option>กาญจนบุรี</option>
+                    <option>ตาก</option>
+                    <option>ประจวบคีรีขันธ์</option>
+                    <option>เพชรบุรี</option>
+                    <option>ราชบุรี</option>
+                </optgroup>
+
+            </select>
+        </div>
+
+
+        <!-- Salary -->
+        <div class="form-group">
+            <label for="salary">Salary</label>
+            <input type="text" id="salary" placeholder="Enter the salary (e.g., $40,000 per year)">
+        </div>
+          <!-- Posted Date
+          <div class="form-group">
+            <label for="postedDate">Posted Date</label>
+            <input type="datetime-local" id="postedDate" value=""> -->
+        <!-- </div> -->
+
+        <!-- Expiration Date -->
+        <div class="form-group">
+            <label for="expirationDate">Expiration Date</label>
+            <input type="date" id="expirationDate">
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="logo footer__logo">
+                    <div href="Firstpage.html">J</div>
+                    <span href="Firstpage.html">ob<br />Hunter</span>
+                </div>
+                <p class="section__description">
+                    Website concept focused on streamlining job searches
+                    <br> for job seekers and providing a platform for companies to reach potential employees effectively.
+                </p>
+                <ul class="footer__socials">
+                    <li><a href="#"><i class="ri-youtube-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                    <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4>Services</h4>
+                <ul class="footer__links">
+                    <li><a href="Firstpage.html">Job seekers</a></li>
+                    <li><a href="Findjob.html">Job search</a></li>
+                    <li><a href="Browse.html">Recommended jobs</a></li>
+                    <li><a href="Explorecompanies.html">Explore companies</a></li>
+                    <li><a href="abtus.html">About us</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <ul class="footer__links">
+                    <li>Email: des424@cloudbased.com</li>
+                    <li>Phone: +66 923456781</li>
+                    <li>Location: DES424 - Cloud-based Application Development</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
