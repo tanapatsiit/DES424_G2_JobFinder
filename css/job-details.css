@@ -1,0 +1,241 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #6c63ff;
+  }
+  
+  /* Header Section */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6c63ff;
+  }
+  
+  .navbar nav a {
+    margin: 0 15px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .navbar .auth-buttons a {
+    padding: 10px 20px;
+    border: 1px solid #6c63ff;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .navbar .auth-buttons .login {
+    color: #6c63ff;
+    background-color: #fff;
+  }
+  
+  .navbar .auth-buttons .signup {
+    color: #fff;
+    background-color: #6c63ff;
+    margin-left: 10px;
+  }
+  
+  /* Job Details Section */
+  .job-details-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .job-header .company-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+  
+  .job-header .job-overview {
+    flex: 1;
+  }
+  
+  .job-title {
+    font-size: 28px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .company-location {
+    font-size: 16px;
+    color: #777;
+    margin: 5px 0 0;
+  }
+  
+  .job-content {
+    margin-top: 20px;
+  }
+  
+  .job-content h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 20px 0 10px;
+  }
+  
+  .job-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .job-content ul {
+    list-style-type: disc;
+    margin: 10px 0 20px 20px;
+    color: #555;
+  }
+  /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #6c63ff;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons a {
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #6c63ff;
+    text-decoration: none;
+}
+
+.auth-buttons .login {
+    background-color: #fff;
+    color: #6c63ff;
+}
+
+.auth-buttons .sign-up {
+    background-color: #6c63ff;
+    color: #fff;
+    margin-left: 10px;
+}
+
+/* Job Details Section */
+.job-details-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.job-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+}
+
+.job-title-location {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-title {
+    font-size: 24px;
+    color: #333;
+}
+
+.company-location {
+    font-size: 16px;
+    color: #888;
+}
+
+.job-description,
+.job-responsibilities,
+.job-requirements {
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p,
+ul {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
