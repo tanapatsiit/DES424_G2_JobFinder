@@ -11,7 +11,7 @@
 
  * ### Job seeker Site
      * When we enter the website it will go to the Job seeker site first
-     * In the job seeker you can find the job that the businesses provide for you
+     * In the job seeker you can find the job that the business companies provide for you
      * You can filter the job by selecting the keyword or job title, Province, work type (Full time, part-time contract), time that job post, salary, etc
      * You can apply the application by selecting the job that you want first after that press the "**send an application**" button, then fill out the form then press the "**submit**" button
        
